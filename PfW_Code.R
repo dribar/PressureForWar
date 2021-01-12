@@ -11,7 +11,7 @@
 #6) The Permutation
 #7) Figures
 #8) Outside Survey Data Analysis
-#9) Appendix C
+#9) Appendix D
 #10) Southern Realignment
 #11) Changes in Terms
 #12) Replicating Main Findings w/ Limited (CSA) South
@@ -959,13 +959,13 @@ table(yank3$q15e[yank3$partyid=="Democrat"])/sum(yank3$partyid=="Democrat")
 table(yank3$q15e[yank3$partyid=="Republican"])/sum(yank3$partyid=="Republican")
 
 
-###9) Appendix C: Alternative Research Design
+###9) Appendix D: Alternative Research Design
 #Outline:
 #9a) Creating the buckets
 #9b) Running the t-tests
 
 #9a) Creating the buckets:
-#See Appendix C for meaningul interpretation of letters
+#See Appendix D for meaningul interpretation of letters
 fulldata$bucket<-NA
 fulldata$bucket<-ifelse(fulldata$Southern==1 & fulldata$S.Pct.EC>mean(fulldata$S.Pct.EC),
                      "A",fulldata$bucket)
